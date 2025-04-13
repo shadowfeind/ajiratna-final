@@ -1,6 +1,6 @@
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import * as schema from "./index"; // Import all schemas
+import * as schema from "./schema/index"; // Import all schemas
 
 const connectionString = process.env.DATABASE_URL!;
 const client = postgres(connectionString);
