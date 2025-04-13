@@ -12,7 +12,5 @@ export const productCategory = pgTable(
       .references(() => category.id)
       .notNull(),
   },
-  (t) => ({
-    pk: primaryKey({ columns: [t.productId, t.categoryId] }),
-  })
+  (t) => [primaryKey({ columns: [t.productId, t.categoryId] })]
 );
