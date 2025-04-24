@@ -128,6 +128,9 @@ export const Products: CollectionConfig = {
       type: 'relationship',
       relationTo: 'categories',
       hasMany: true,
+      admin: {
+        position: 'sidebar',
+      },
     },
     {
       name: 'description',
